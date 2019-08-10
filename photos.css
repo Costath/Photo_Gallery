@@ -1,0 +1,115 @@
+/*    Based on :
+ *    JavaScript 6th Edition
+ *    Chapter 5
+ *    Chapter case
+ * 
+ *    Photo gallery
+ *    Variables and functions
+ * 
+ *    Author: Thales Costa
+ *    Date:   August, 2019
+ *    Professor: Wallace Balaniuc
+ *    Course: Client-Side Web Development - COMP 125
+ *    Centennial College
+ *    
+ *    Filename: photos.css
+ */
+
+/* apply a natural box layout model to all elements */
+* {
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   box-sizing: border-box;
+}
+/* reset rules */
+html, body, div, h3, p, img, article, 
+figure, footer, header {
+   margin: 0;
+   padding: 0;
+   border: 0;
+   font-size: 100%;
+   font: inherit;
+   vertical-align: baseline;
+}
+body {
+   line-height: 1;
+   width: 960px;
+   margin: 0 auto;
+   font-family: verdana, arial, helvetica, sans-serif;
+   background: black;
+   position: relative;
+}
+/* page header */
+header {
+   color: white;
+   font-size: 3.7em;
+}
+header h3 {
+   text-align: center;
+   padding: 0.5em;
+}
+/* main content */
+article {
+   position: relative;
+}
+#leftarrow, #rightarrow {
+   background: #696565;
+   color: white;
+   position: absolute;
+   z-index: 30;
+   text-align: center;
+   height: 135px;
+   width: 40px;
+   top: 67px;
+}
+#leftarrow {
+   left: 0;
+}
+#rightarrow {
+   right: 0;
+}
+#updateButton, #label, #showInterval {
+   display: block;
+   top: 290px;
+   color: white;
+   text-align: center;
+   width: 20%;
+   margin: 0 auto;
+   line-height: 2em;
+   background: #696565;
+   position: relative;
+}
+#label {
+   top: 310px;
+}
+#showInterval{
+   top: 330px;
+}
+figure {
+   position: absolute;
+   -webkit-box-shadow: 10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   -moz-box-shadow:    10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+   box-shadow:         10px 0px 5px rgb(50, 50, 50),
+                       -10px 0px 5px rgb(50, 50, 50);
+}
+#fig1, #fig5 {
+   display: none;
+}
+#fig2 {
+   z-index: 10;
+   left: 13%;
+   top: 34px;
+}
+#fig3 {
+   z-index: 20;
+   left: 50%;
+   margin-left: -240px;
+   top: 0;
+}
+#fig4 {
+   z-index: 10;
+   right: 13%;
+   top: 34px;
+}

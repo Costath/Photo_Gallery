@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <!--
+      Based on :
+      JavaScript 6th Edition
+      Chapter 5
+      Chapter case
+   
+      Photo gallery
+      Variables and functions
+   
+      Author: Thales Costa
+      Date:   August, 2019
+      Professor: Wallace Balaniuc
+      Course: Client-Side Web Development - COMP 125
+      Centennial College
+   
+      Filename: index.html
+   -->
+   <meta charset="utf-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <title>Photo gallery</title>
+   <link rel="stylesheet" href="photos.css" />
+</head>
+
+<body>
+   <div>
+      <header>
+         <h3>Photo gallery</h3>
+      </header>
+
+      <article>
+         <button id="leftarrow">&lt;</button>
+         <figure id="fig1">
+            <img width="360" height="202" />
+         </figure>
+         <figure id="fig2">
+            <img width="360" height="202" />
+         </figure>
+         <figure id="fig3">
+            <img width="480" height="270" />
+         </figure>
+         <figure id="fig4">
+            <img width="360" height="202" />
+         </figure>
+         <figure id="fig5">
+            <img width="360" height="202" />
+         </figure>
+         <button id="rightarrow">&gt;</button>
+         <button id="updateButton">Update</button>
+         <p id="label"></p>
+         <p id="showInterval"></p>
+      </article>
+   </div>
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="photos.js"></script>
+</body>
+</html>
